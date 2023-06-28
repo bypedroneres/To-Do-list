@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+body {
+    background-color: #1a1a1a;
+    color: #4a5b65;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+/* TO DO LIST */
+.tdl-holder {
+    margin: 0px auto;
+    width: 400px;
+    margin-top: 200px;
+}
+
+.tdl-holder h2 {
+    background-color: #303030;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+    color: #f4f4f4;
+    font-family: "Roboto Mono", monospace;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 56px;
+    margin: 0;
+}
+
+.tdl-holder ul,
+.tdl-holder li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tdl-holder li {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    color: #b1b2c9;
+}
+
+.tdl-holder li span {
+    margin-left: 30px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    color: #808080;
+    font-size: 12px;
+}
+
+.tdl-holder label {
+    cursor: pointer;
+    display: block;
+    line-height: 56px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.tdl-holder label a {
+    background-color:#8e8e8e ;
+    border-radius: 50%;
+    color: #f4f4f4;
+    display: none;
+    float: right;
+    font-weight: bold;
+    line-height: 16px; /* Set line-height equal to height for vertical centering */
+    height: 16px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 16px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.tdl-holder label:hover a {
+    display: block;
+}
+
+.tdl-holder label a:hover {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+
+.tdl-holder input[type="checkbox"] {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+}
+
+.tdl-holder input[type="checkbox"] + i {
+    border: 1px solid #989898;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    width: 16px;
+    z-index: 1;
+}
+
+.tdl-holder input[type="checkbox"]:checked + i::after {
+    background-color: #989898;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 16px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 16px;
+    z-index: 1;
+}
+
+.tdl-holder input[type="checkbox"]:checked ~ span {
+    color: #808080;
+    text-decoration: line-through;
+}
+
+.tdl-holder input[type="text"] {
+    background-color: #f4f4f4;
+    border: none;
+    font-family: "Roboto Mono", monospace;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #747474;
+    font-size: 12px;
+    margin: 0;
+    padding: 20px 15px;
+    width: 370px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.tdl-holder input[type="text"]:hover {
+    color: #848484;
+}
+
+.tdl-holder input[type="text"]:focus {
+    color: #1a1a1a;
+}
+
+.tdl-holder ::-webkit-input-placeholder {
+    color: #808080;
+}
+
+.tdl-holder :-moz-placeholder {
+    color: #808080;
+}
+
+.tdl-holder :-ms-input-placeholder {
+    color: #808080;
+}
+
+.tdl-holder li.remove {
+    display: none;
+}
+
+.image-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.behance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 5px; /* Add margin-left */
+}
+
+.behance img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
