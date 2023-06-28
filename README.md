@@ -30,7 +30,7 @@ The To-Do List Project features a minimalist and clean design. The interface is 
 
 <h4>✹ Link to the Project ✹</h4>
 
-<h5>https://example.com/todo-list-project</h5>
+<h5>https://bypedroneres.github.io/To-Do-list/</h5>
 
 <h4>✹ Thanks for your interest! ✹</h4>
 
