@@ -31,20 +31,7 @@ $(document).ready(function() {
     $(".tdl-content").on("change", "input[type='checkbox']", function() {
       saveTasks(); // Save tasks to localStorage after checkbox change
     });
-  
-    // Function to save tasks to localStorage
-    function saveTasks() {
-      var tasks = [];
-      $(".tdl-content ul li").each(function() {
-        var task = {
-          text: $(this).find("span").text(),
-          checked: $(this).find("input[type='checkbox']").prop("checked")
-        };
-        tasks.push(task);
-      });
-      localStorage.setItem("tasks", JSON.stringify(tasks));
-    }
-  
+
     // Function to load tasks from localStorage
     function loadTasks() {
       var storedTasks = localStorage.getItem("tasks");
